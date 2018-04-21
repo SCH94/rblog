@@ -22,7 +22,7 @@
  <p>
   <%= f.label :Attached_Image %><br />
   <% if @article.image.exists? %>
-      <%= image_tag @article.image.url %><br/>
+      <%= image_tag @article.image.url(:medium) %><br/>
   <% end %>
 </p>
 
